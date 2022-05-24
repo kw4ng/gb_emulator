@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4873D2BA283C50E400B52223 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4873D2B9283C50E400B52223 /* main.cpp */; };
+		4873D2BA283C50E400B52223 /* gameboy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4873D2B9283C50E400B52223 /* gameboy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,23 @@
 
 /* Begin PBXFileReference section */
 		4873D2AF283C50A500B52223 /* gb_emulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gb_emulator; sourceTree = BUILT_PRODUCTS_DIR; };
-		4873D2B9283C50E400B52223 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4873D2B9283C50E400B52223 /* gameboy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameboy.cpp; sourceTree = "<group>"; };
+		4873D2BB283C51A600B52223 /* Gameboy (LR35902) OPCODES.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Gameboy (LR35902) OPCODES.pdf"; sourceTree = "<group>"; };
+		4873D2BC283C51B400B52223 /* GameBoyProgManVer1.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GameBoyProgManVer1.1.pdf; sourceTree = "<group>"; };
+		4873D2BD283C51F000B52223 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		4873D2BF283C56E400B52223 /* pokemon_red.gb */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon_red.gb; sourceTree = "<group>"; };
+		4873D2C1283C577500B52223 /* The Cycle-Accurate Game Boy Docs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Cycle-Accurate Game Boy Docs.pdf"; sourceTree = "<group>"; };
+		4873D2C3283C597F00B52223 /* emulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emulator.cpp; sourceTree = "<group>"; };
+		4873D2C5283C5E1F00B52223 /* SDL2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDL2; sourceTree = "<group>"; };
+		4873D2C7283C5E9100B52223 /* libSDL2_test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2_test.a; sourceTree = "<group>"; };
+		4873D2C8283C5E9100B52223 /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2main.a; sourceTree = "<group>"; };
+		4873D2C9283C5E9100B52223 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2.a; sourceTree = "<group>"; };
+		4873D2CA283C5E9100B52223 /* pkgconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pkgconfig; sourceTree = "<group>"; };
+		4873D2CB283C5E9100B52223 /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libSDL2.dylib; sourceTree = "<group>"; };
+		4873D2CC283C5E9100B52223 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		4873D2CD283C5E9100B52223 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		4873D2CE283C619A00B52223 /* cartridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cartridge.cpp; sourceTree = "<group>"; };
+		4873D2CF283C61A600B52223 /* cpu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpu.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +57,16 @@
 		4873D2A6283C50A500B52223 = {
 			isa = PBXGroup;
 			children = (
-				4873D2B1283C50A500B52223 /* gb_emulator */,
+				4873D2BD283C51F000B52223 /* README.md */,
+				4873D2C0283C571900B52223 /* docs */,
+				4873D2BE283C56BD00B52223 /* roms */,
+				4873D2C2283C58A300B52223 /* tests */,
+				4873D2C4283C5DE900B52223 /* include */,
+				4873D2C6283C5E7D00B52223 /* lib */,
+				4873D2C3283C597F00B52223 /* emulator.cpp */,
+				4873D2B9283C50E400B52223 /* gameboy.cpp */,
+				4873D2CE283C619A00B52223 /* cartridge.cpp */,
+				4873D2CF283C61A600B52223 /* cpu.cpp */,
 				4873D2B0283C50A500B52223 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +79,51 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4873D2B1283C50A500B52223 /* gb_emulator */ = {
+		4873D2BE283C56BD00B52223 /* roms */ = {
 			isa = PBXGroup;
 			children = (
-				4873D2B9283C50E400B52223 /* main.cpp */,
+				4873D2BF283C56E400B52223 /* pokemon_red.gb */,
 			);
-			path = gb_emulator;
+			path = roms;
+			sourceTree = "<group>";
+		};
+		4873D2C0283C571900B52223 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				4873D2C1283C577500B52223 /* The Cycle-Accurate Game Boy Docs.pdf */,
+				4873D2BB283C51A600B52223 /* Gameboy (LR35902) OPCODES.pdf */,
+				4873D2BC283C51B400B52223 /* GameBoyProgManVer1.1.pdf */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		4873D2C2283C58A300B52223 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		4873D2C4283C5DE900B52223 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4873D2C5283C5E1F00B52223 /* SDL2 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4873D2C6283C5E7D00B52223 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4873D2CD283C5E9100B52223 /* cmake */,
+				4873D2C7283C5E9100B52223 /* libSDL2_test.a */,
+				4873D2CC283C5E9100B52223 /* libSDL2-2.0.0.dylib */,
+				4873D2C9283C5E9100B52223 /* libSDL2.a */,
+				4873D2CB283C5E9100B52223 /* libSDL2.dylib */,
+				4873D2C8283C5E9100B52223 /* libSDL2main.a */,
+				4873D2CA283C5E9100B52223 /* pkgconfig */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4873D2BA283C50E400B52223 /* main.cpp in Sources */,
+				4873D2BA283C50E400B52223 /* gameboy.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +196,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -190,7 +254,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
