@@ -28,7 +28,6 @@
 		4873D2BB283C51A600B52223 /* Gameboy (LR35902) OPCODES.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Gameboy (LR35902) OPCODES.pdf"; sourceTree = "<group>"; };
 		4873D2BC283C51B400B52223 /* GameBoyProgManVer1.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GameBoyProgManVer1.1.pdf; sourceTree = "<group>"; };
 		4873D2BD283C51F000B52223 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		4873D2BF283C56E400B52223 /* pokemon_red.gb */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon_red.gb; sourceTree = "<group>"; };
 		4873D2C1283C577500B52223 /* The Cycle-Accurate Game Boy Docs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Cycle-Accurate Game Boy Docs.pdf"; sourceTree = "<group>"; };
 		4873D2C3283C597F00B52223 /* emulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emulator.cpp; sourceTree = "<group>"; };
 		4873D2C5283C5E1F00B52223 /* SDL2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDL2; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		4873D2CD283C5E9100B52223 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
 		4873D2CE283C619A00B52223 /* cartridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cartridge.cpp; sourceTree = "<group>"; };
 		4873D2CF283C61A600B52223 /* cpu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpu.cpp; sourceTree = "<group>"; };
+		4873D2D0283C630100B52223 /* pokemon_red.gb */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon_red.gb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		4873D2BE283C56BD00B52223 /* roms */ = {
 			isa = PBXGroup;
 			children = (
-				4873D2BF283C56E400B52223 /* pokemon_red.gb */,
+				4873D2D0283C630100B52223 /* pokemon_red.gb */,
 			);
 			path = roms;
 			sourceTree = "<group>";
